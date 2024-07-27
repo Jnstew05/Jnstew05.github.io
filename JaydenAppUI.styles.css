@@ -1,0 +1,72 @@
+@import '_content/Blazor.Bootstrap/Blazor.Bootstrap.bundle.scp.css';
+
+/* /Pages/Login.razor.rz.scp.css */
+#background[b-8an5xcbi5u] {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    font-family: 'Montserrat', sans-serif; /* Apply the Montserrat font */
+}
+
+#login-box[b-8an5xcbi5u] {
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+    #login-box h2[b-8an5xcbi5u] {
+        margin-bottom: 1em;
+        color: #333;
+        font-size: 2em; /* Increase the font size */
+        font-weight: 700; /* Use the bold variant of Montserrat */
+    }
+
+#inputs[b-8an5xcbi5u] {
+    margin-bottom: 2em;
+}
+
+.input-div[b-8an5xcbi5u] {
+    margin-bottom: 1.5em;
+}
+
+#login-box input[b-8an5xcbi5u] {
+    width: 90%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+    #login-box input:focus[b-8an5xcbi5u] {
+        border-color: #3498db;
+    }
+
+#login[b-8an5xcbi5u] {
+    height: 2.5em;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    #login:hover[b-8an5xcbi5u] {
+        background-color: #2980b9;
+        transform: scale(1.05); /* Add a slight scale effect on hover */
+    }
+
+    #login:active[b-8an5xcbi5u] {
+        background-color: #216a94; /* Darker color when button is pressed */
+    }
