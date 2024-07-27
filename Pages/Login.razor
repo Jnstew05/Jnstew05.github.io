@@ -1,0 +1,26 @@
+﻿@page "/"
+@layout EmptyLayout
+@using BlazorBootstrap
+
+<body>
+    <div id="background">
+        <Toasts Messages="messages" Placement="ToastsPlacement.TopLeft" AutoHide="true" Delay="5000"></Toasts>
+        <div id="login-box">
+            <h2>Login</h2>
+            <div id="inputs">
+                <div class="input-div">
+                    <input @bind-value="Username" type="text" id="username" placeholder="Username">
+                </div>
+                <div class="input-div">
+                    <input @bind-value="Password" type="password" id="password" placeholder="Password">
+                </div>
+            </div>
+            <div id="login-div">
+                <button @onclick='ValidateUser' id="login">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+@* TO DO REMOVE LOADING ANIUMATION *@

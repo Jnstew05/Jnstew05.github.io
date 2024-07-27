@@ -1,0 +1,50 @@
+﻿@page "/home"
+@using JaydenAppModels.Models
+@using JaydenAppUI.Services
+@using Microsoft.AspNetCore.SignalR.Client
+@layout MainLayout
+@inject NavigationManager Navigation
+@implements IDisposable
+
+
+<button @onclick='() => Navigation.NavigateTo("/test")'>test</button>
+
+@foreach (var message in Messages)
+{
+    <h2>@message</h2>
+}
+
+@code
+{
+    [Inject] private ChatHubService _ChatHubService { get; set; } = default!;
+
+    private string? MessageToSend { get; set; }
+
+    private List<string> Messages = new List<string>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await _ChatHubService.InitiateConnection();
+        _ChatHubService.ReceiveGlobalMessage += ReceieveMessage;
+    }
+
+    private async void SendMessage()
+    {
+        /*var user = new AuthenticatedUser() { UserName = username };
+        await _ChatHubService.SendGlobalMessage(user, MessageToSend!);*/
+    }
+
+    private void ReceieveMessage(object? sender, GlobalChatMessages chatLog)
+    {
+        string clientMsg = " Using the javascript client";
+        Messages.Add($"Message received from {chatLog.Username} {(chatLog.JavascriptClient == true ? clientMsg : string.Empty) } => {chatLog.Message}");
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        _ChatHubService.ReceiveGlobalMessage -= ReceieveMessage;
+        Task.Run(() => _ChatHubService.TerminateConnection());
+    }
+}
