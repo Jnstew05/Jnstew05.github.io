@@ -1,5 +1,42 @@
 @import '_content/Blazor.Bootstrap/Blazor.Bootstrap.bundle.scp.css';
 
+/* /Components/MessageBox.razor.rz.scp.css */
+body[b-ssd16ioj3n] {
+    font-family: Arial, sans-serif;
+}
+.message-box[b-ssd16ioj3n] {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.username[b-ssd16ioj3n] {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.message[b-ssd16ioj3n] {
+    font-size: 16px;
+    line-height: 1.5;
+}
+@media (max-width: 600px) {
+    .message-box[b-ssd16ioj3n] {
+        padding: 15px;
+    }
+    .username[b-ssd16ioj3n] {
+        font-size: 16px;
+    }
+    .message[b-ssd16ioj3n] {
+        font-size: 14px;
+    }
+}
+/* /Pages/Home.razor.rz.scp.css */
+.message-container[b-xpu7sme03p]
+{
+}
 /* /Pages/Login.razor.rz.scp.css */
 #background[b-8an5xcbi5u] {
     margin: 0;
