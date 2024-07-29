@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "JaydenAppUI",
   "resources": {
-    "hash": "sha256-l0JI2be3HX45D11nUEnDgyhmabqzp+aJ3nDax3iNQ2w=",
+    "hash": "sha256-plbHIASQ7e9QkdcxDl5VcyUhGIdPU0lv7k//uYJDCzY=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.7zt3zdr93h.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
@@ -20,7 +20,7 @@
       "BlazorBootstrap.wasm": "sha256-DXl738A3nveFxYK+NWkxvHdTmicdO6btBT/VduMi0Co=",
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "JaydenAppModels.wasm": "sha256-5R5NY7TOO7vRmOvCKIHilfZ/BjSSZ5SV9dCdMKYthag=",
-      "JaydenAppUI.wasm": "sha256-xOfXXadafCU0OMuLsZ+Fz/zOzmw5zGcWsX1idBwH8IM=",
+      "JaydenAppUI.wasm": "sha256-uWX5MdO25gG6csq+va+TzSSvkR/VerGuEjOVD7+4nFg=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-tZ3Z0q6xQTgUxlWgiWvzS4SBQeBqETtRGtUWvVaU31w=",
       "Microsoft.AspNetCore.Components.Authorization.wasm": "sha256-BCPKMbkDKppx2pgC6nZbJaAlm3G8ykAYqS28aHPVIy0=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-jF61/tMVhyfIJeua/KURR4OBR1xOxFpZGWa/OvX+Juk=",
